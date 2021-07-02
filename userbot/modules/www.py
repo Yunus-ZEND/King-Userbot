@@ -107,6 +107,7 @@ async def pingme(pong):
                     f"`{uptime}` \n" % (duration))
 
 
+@Client.on_message(other_filters2)
 @register(outgoing=True, pattern="^.ping$")
 async def pingme(pong):
     """ For .ping command, ping the userbot from any chat.  """
@@ -120,6 +121,8 @@ async def pingme(pong):
     await pong.edit("⚡️")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
+    async def start(_, message: Message):
+    await message.reply_sticker("CAACAgUAAxkBAAEJw1VglUpanMc9Ffmv4tTL3I0YnnF4AQACowMAAtGoqVSBxAxx64NNCB8E")
     await pong.edit(f"卍════〠 **TEST PING** 〠════卍\n"
                     f"═⎆ **Ping:** "
                     f"`%sms` \n"
