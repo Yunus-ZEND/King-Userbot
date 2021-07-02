@@ -8,7 +8,7 @@
 
 import time
 
-from pyrogram import Client, filters
+import Client, filters
 from helpers.filters import other_filters2
 
 from datetime import datetime
