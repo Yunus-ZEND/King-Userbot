@@ -125,7 +125,7 @@ async def pingme(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     async def start(_, message: Message):
-    await message.reply_sticker("CAACAgUAAxkBAAEJw1VglUpanMc9Ffmv4tTL3I0YnnF4AQACowMAAtGoqVSBxAxx64NNCB8E")
+    await pong.edit.reply_sticker("CAACAgUAAxkBAAEJw1VglUpanMc9Ffmv4tTL3I0YnnF4AQACowMAAtGoqVSBxAxx64NNCB8E")
     await pong.edit(f"卍════〠 **TEST PING** 〠════卍\n"
                     f"═⎆ **Ping:** "
                     f"`%sms` \n"
