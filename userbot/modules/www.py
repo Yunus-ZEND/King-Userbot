@@ -9,6 +9,7 @@
 import time
 
 from helpers.filters import other_filters2
+from pyrogram import Client, filters
 
 from datetime import datetime
 from telethon import functions
