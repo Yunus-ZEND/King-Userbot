@@ -96,3 +96,4 @@ youtube-search>=1.1.1
 youtube_dl>=2021.6.6
 pendulum
 lyrics_extractor
+pyrogram
